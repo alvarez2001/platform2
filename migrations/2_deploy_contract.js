@@ -1,4 +1,4 @@
-const Arts = artifacts.require("Arts");
+const FactoryAuctionsAndToken = artifacts.require("FactoryAuctionsAndToken");
 module.exports = function(deployer) {
-  deployer.deploy(Arts);
+  deployer.deploy(FactoryAuctionsAndToken);
 };
