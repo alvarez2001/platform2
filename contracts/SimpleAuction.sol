@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "./FactoryAuctionsAndToken.sol";
 
@@ -12,8 +11,7 @@ contract SimpleAuction is IERC721Receiver{
 
     address public highestBidder;
     uint public highestBid;
-    
-    IERC721 public Art;
+
     uint256 public tokenID;
     
     FactoryAuctionsAndToken factoryAuctions;
@@ -30,10 +28,9 @@ contract SimpleAuction is IERC721Receiver{
     event HighestBidIncrease(address bidder, uint amount);
     event AuctionEnded(address winner, uint amount);
 
-    constructor(uint _biddingTime, address payable _beneficiary, address _art, uint256 _tokenID, address _factory){
+    constructor(uint _biddingTime, address payable _beneficiary, uint256 _tokenID, address _factory){
         beneficiary = _beneficiary;
         auctionEndTime = block.timestamp + _biddingTime;
-        Art = IERC721(_art);
         tokenID = _tokenID;
         factoryAuctions = FactoryAuctionsAndToken(_factory);
     }
@@ -108,7 +105,7 @@ contract SimpleAuction is IERC721Receiver{
         factoryAuctions.ChangeStateAuctions(tokenID, false, address(this));
         emit AuctionEnded(highestBidder, highestBid);
         beneficiary.transfer(highestBid);
-        Art.safeTransferFrom(address(this), highestBidder, tokenID);
+        factoryAuctions.safeTransferFrom(address(this), highestBidder, tokenID);
     }
 
 

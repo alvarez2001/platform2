@@ -4,12 +4,16 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "./FactoryAuctionsAndToken.sol";
 
 contract Arts is ERC721Enumerable {
     ArtStruct[] public artsArray;
     mapping(string => bool) _imageArtExists;
+    FactoryAuctionsAndToken private FactoryAuctions;
 
-    constructor(string memory _name, string memory _symbol)  ERC721(_name, _symbol) {}
+    constructor(string memory _name, string memory _symbol, address _FactoryAuctions)  ERC721(_name, _symbol) {
+        FactoryAuctions = FactoryAuctionsAndToken(_FactoryAuctions);
+    }
     
     struct ArtStruct{
         address creator;
@@ -36,6 +40,12 @@ contract Arts is ERC721Enumerable {
             _mint(msg.sender, _id);
             _imageArtExists[_imageArt] = true;
             return _id;
+    }
+    
+    
+    function safeTransferFromContract(address from, address to, uint256 tokenId) public {
+        
+        safeTransferFrom(from, to, tokenId, "");
     }
 
 
