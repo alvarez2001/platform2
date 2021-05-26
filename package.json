@@ -2,11 +2,12 @@
   "name": "nftArte",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "dev": "nodemon src/index.js",
     "compile": "npx truffle compile",
     "test-contract": "npx truffle test",
     "deploy-contract": "npx truffle migrate"
@@ -17,13 +18,22 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.1.0",
     "@truffle/hdwallet-provider": "^1.4.0",
+    "connect-flash": "^0.1.1",
     "ethereumjs-tx": "^2.1.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
     "solc": "^0.8.0",
     "truffle": "^5.3.6",
     "web3": "^1.3.5"
   },
   "devDependencies": {
     "chai": "^4.3.4",
-    "chai-as-promised": "^7.1.1"
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "npm-check-updates": "^11.5.13"
   }
 }

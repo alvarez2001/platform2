@@ -1,0 +1,695 @@
+<div class="home" id="home">
+
+    {{>navbar}}
+
+
+      <!-- Modal LOGIN -->
+      <div
+        class="modal fade"
+        id="LoginPopup"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="LoginPopupLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body position-relative modal-nft">
+              <p class="mb-0 text-end">
+                <button
+                  class="btn btn-closed p-0 m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  type="button"
+                >
+                  <i class="fas fa-window-close"></i>
+                </button>
+              </p>
+              <div class="px-md-5 px-2">
+                <h2 class="modal-nft-title text-center m-0">Login</h2>
+                <h3 class="text-center display-1 my-2">
+                  <i class="fas fa-user-circle"></i>
+                </h3>
+                <h2 class="modal-nft-title text-center mb-4">
+                  <img src="./imgs/logo.jpeg" alt="" width="200" height="50" />
+                </h2>
+                <div class="botones">
+                  <a
+                    href="./dashboard.html"
+                    class="w-100 btn rojo font-bold-family25 btn-sesiones text-center"
+                  >
+                    <i class="fab fa-google-plus-g me-2"></i>
+                    login with google
+                  </a>
+                  <a
+                    href="./login.html"
+                    class="w-100 btn azul-obscuro font-bold-family25 btn-sesiones text-center"
+                  >
+                    <i class="fas fa-envelope me-2"></i>
+                    login with email
+                  </a>
+                </div>
+                <p
+                  data-bs-target="#RegisterPopup"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  class="d-block cursor-pointer mb-4 text-decoration-none text-end line-h-1 font-titulo font-15px font-weight-bold obscuro text-uppercase"
+                >
+                  already have an
+                  <span class="d-block">account</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal LOGIN -->
+
+      <!-- Modal REGISTER -->
+      <div
+        class="modal fade"
+        id="RegisterPopup"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="RegisterPopupLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body position-relative modal-nft">
+              <p class="mb-0 text-end">
+                <button
+                  class="btn btn-closed p-0 m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  type="button"
+                >
+                  <i class="fas fa-window-close"></i>
+                </button>
+              </p>
+              <div class="px-md-5 px-2">
+                <h2 class="modal-nft-title text-center m-0">register</h2>
+                <h3 class="text-center display-1 my-2">
+                  <i class="fas fa-user-circle"></i>
+                </h3>
+                <h2 class="modal-nft-title text-center mb-4">
+                  <img src="./imgs/logo.jpeg" alt="" width="200" height="50" />
+                </h2>
+                <form action="" class="form-propio">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="EMAIL"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="PASSWORD"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="REPEAT PASSWORD"
+                    />
+                  </div>
+                </form>
+                <div class="text-center">
+                  <button
+                    data-bs-target="#LoginPopup"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                    class="btn btn-obscuro btn-details mt-0 mb-4 rounded-0 px-4"
+                  >
+                    register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL REGISTER -->
+
+
+      <section class="hero d-flex justify-content-center align-items-center">
+        <div class="hero-content container text-center">
+          <h1
+            class="text-white font-titulo titulo text-uppercase"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            The best marketplace to <span class="d-block"> sell and buy </span>
+          </h1>
+          <form class="w-100 mt-4">
+            <div
+              class="input-group"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <input
+                type="text"
+                aria-describedby="search by creator"
+                class="form-control text-center font-texto border-none form-control-lg pl-5"
+                placeholder="search by creator, collectible or collection"
+              />
+              <button
+                class="input-group-text btn px-4 bg-white border-none text-center"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+
+
+      <section class="my-5 container">
+        <div
+          class="items-carrousel position-relative"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          
+          <div class="card">
+            <img src="./imgs/slamxzion.jpg" alt="" class="card-img-carrousel" />
+            <div
+              class="card-texto-carrousel font-texto d-flex flex-column justify-content-between"
+            >
+              <div class="mt-4">
+                <h3>SLAN X ZION SLAN X ZION</h3>
+                <p>
+                  Zion Williamson and iconic basketball brand SLAM have joined
+                  forces for a first of-its-kind-drop Zion Williamson and iconic
+                  basketball brand SLAM have joined forces for a first
+                  of-its-kind-drop >Zion Williamson and iconic basketball brand
+                  SLAM have joined forces for a first of-its-kind-drop Zion
+                  Williamson and iconic basketball brand SLAM have joined forces
+                  for a first of-its-kind-drop
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-obscuro-transparent align-self-start px-4 pe-5 position-relative"
+              >
+                Explore <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          
+          <div class="card">
+            <img src="./imgs/slamxzion.jpg" alt="" class="card-img-carrousel" />
+            <div
+              class="card-texto-carrousel font-texto d-flex flex-column justify-content-between"
+            >
+              <div class="mt-4">
+                <h3>SLAN X ZION SLAN X ZION</h3>
+                <p>
+                  Zion Williamson and iconic basketball brand SLAM have joined
+                  forces for a first of-its-kind-drop Zion Williamson and iconic
+                  basketball brand SLAM have joined forces for a first
+                  of-its-kind-drop >Zion Williamson and iconic basketball brand
+                  SLAM have joined forces for a first of-its-kind-drop Zion
+                  Williamson and iconic basketball brand SLAM have joined forces
+                  for a first of-its-kind-drop
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-obscuro-transparent align-self-start px-4 pe-5 position-relative"
+              >
+                Explore <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          
+          <div class="card">
+            <img src="./imgs/slamxzion.jpg" alt="" class="card-img-carrousel" />
+            <div
+              class="card-texto-carrousel font-texto d-flex flex-column justify-content-between"
+            >
+              <div class="mt-4">
+                <h3>SLAN X ZION SLAN X ZION</h3>
+                <p>
+                  Zion Williamson and iconic basketball brand SLAM have joined
+                  forces for a first of-its-kind-drop Zion Williamson and iconic
+                  basketball brand SLAM have joined forces for a first
+                  of-its-kind-drop >Zion Williamson and iconic basketball brand
+                  SLAM have joined forces for a first of-its-kind-drop Zion
+                  Williamson and iconic basketball brand SLAM have joined forces
+                  for a first of-its-kind-drop
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-obscuro-transparent align-self-start px-4 pe-5 position-relative"
+              >
+                Explore <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <!-- best seller -->
+
+      <!-- <section class="bestSeller container">
+        <div
+          class="position-relative mb-3"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <h2
+            class="font-titulo pe-4 text-uppercase bg-white d-inline position-relative"
+          >
+            Best 10 Sellers <span class="text-gris">in the week</span>
+          </h2>
+          <span class="subrayado-titulo"></span>
+        </div>
+        <div
+          class="row justify-content-center"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <div class="col-6 col-md-4 col-lg-2-5 font-texto">
+            
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+            
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2-5 font-texto">
+            
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+            
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2-5 font-texto">
+            
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2-5 font-texto">
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2-5 font-texto">
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+            <div class="bestOne">
+              <span class="bestOneNumber">1</span>
+              <div class="position-relative bestOneImage">
+                <img
+                  src="./imgs/dwayne.png"
+                  class="rounded-circle"
+                  alt="dwayne"
+                />
+                <img src="./imgs/check.svg" class="checkImage" alt="" />
+              </div>
+              <div class="bestOneText">
+                <p class="m-0 text-uppercase">Mike Dwayne</p>
+                <p class="m-0 text-uppercase text-gris">47 Th</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- best seller -->
+
+      <!-- bids -->
+      <section class="bids container my-5">
+        <div
+          class="position-relative my-3"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <h2
+            class="font-titulo pe-4 text-uppercase bg-white d-inline position-relative"
+          >
+            bids
+          </h2>
+          <span class="subrayado-titulo"></span>
+        </div>
+
+        <div
+          class="font-texto mt-5 bids-home"
+        >
+          <div class="row" style="row-gap: 15px;">
+            {{>bids-card}}
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- bids -->
+
+      <!-- collections -->
+      <!-- <section class="bids container my-5">
+        <div
+          class="position-relative my-3"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <h2
+            class="font-titulo pe-4 text-uppercase bg-white d-inline position-relative"
+          >
+            new collections
+          </h2>
+          <span class="subrayado-titulo"></span>
+        </div>
+
+        <div
+          class="carrousel-collection font-texto mt-5"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-collections">
+            <div class="card-collections-image">
+              <img src="./imgs/bids.png" alt="" />
+            </div>
+            <div class="card-collections-content">
+              <div class="card-collections-user">
+                <div class="image-user">
+                  <img
+                    src="./imgs/dwayne.png"
+                    class="rounded-circle img"
+                    alt="dwayne"
+                  />
+                  <img src="./imgs/check.svg" class="checkImage" alt="" />
+                </div>
+              </div>
+              <div class="card-collections-text">
+                <p class="text-uppercase">
+                  <strong class="d-block font-titulo font-bold"
+                    >wrapped cryptopunks</strong
+                  >
+                  <span class="d-block font-texto text-gris">erc - 721</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- collections -->
+
+      
+      <section
+        class="hero-footer d-flex justify-content-center align-items-center"
+      >
+        <div class="hero-content-footer container text-center">
+          <div class="row justify-content-center align-item-center">
+            <div class="col-12 col-md-6 m-auto">
+              <h1
+                class="text-white font-titulo titulo text-uppercase position-relative"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
+                Discover this <span class="d-block"> amazing world </span>
+              </h1>
+            </div>
+            <div class="col-12 col-md-6 m-auto">
+              <button
+                class="btn text-uppercase bg-white rounded-0 btn-lg"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-bs-toggle="modal"
+                data-bs-target="#RegisterPopup"
+              >
+                register now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+{{>footer}}
+      
+
+
+</div>
